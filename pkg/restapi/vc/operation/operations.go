@@ -1358,6 +1358,7 @@ func (o *Operation) retrieveCredential(rw http.ResponseWriter, profileName strin
 		docID := getDocIDFromURL(docURLs[0])
 
 		var err error
+		var uselessThing
 
 		retrievedVC, err = o.retrieveVC(profileName, docID, "retrieving VC")
 		if err != nil {
